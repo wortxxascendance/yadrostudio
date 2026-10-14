@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ядро — студия разработки сайтов</title>
+<meta name="description" content="Ядро делает сайты, интернет-магазины и сервисы для бизнеса. Свой код, оплата, доставка, боты для соц-сетей и поддержка после запуска.">
+<meta name="theme-color" content="#f8faff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%231c3fe0' stroke-width='1.6'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%231c3fe0' stroke-width='1.6' transform='rotate(60 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%231c3fe0' stroke-width='1.6' transform='rotate(-60 16 16)'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%231c3fe0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=PT+Mono&display=swap">
+  <script type="module" crossorigin src="./assets/yadro-CsF73ZOI.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/lenis-BLQ1Vt1D.js">
+  <link rel="stylesheet" crossorigin href="./assets/yadro-DuBryvf8.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="bar__logo" href="#top" aria-label="Ядро, наверх">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="14" ry="5.5"/><ellipse cx="16" cy="16" rx="14" ry="5.5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5.5" transform="rotate(-60 16 16)"/><circle cx="16" cy="16" r="3.4"/></svg>
+    Ядро
+  </a>
+  <nav class="bar__nav" aria-label="Разделы">
+    <a href="#lab">Работы</a>
+    <a href="#chain">Процесс</a>
+    <a href="#table">Стоимость</a>
+  </nav>
+  <a class="bar__cta" href="#contact">Обсудить проект</a>
+</header>
+
+<main id="top">
+  <!-- Атом: услуги летают вокруг ядра -->
+  <section class="hero" id="hero">
+    <div class="atom" id="atom">
+      <canvas id="atomCanvas" aria-hidden="true"></canvas>
+      <button class="nucleus" id="nucleus" type="button" aria-label="Запустить реакцию"></button>
+      <div class="electrons" id="electrons">
+        <a class="e" href="#table" data-pick="la" data-orbit="0" data-phase="0">Лендинг</a>
+        <a class="e" href="#table" data-pick="ma" data-orbit="1" data-phase="2.2">Интернет-магазин</a>
+        <a class="e" href="#table" data-pick="bt" data-orbit="2" data-phase="4.1">Бот в соц-сетях</a>
+        <a class="e" href="#table" data-pick="lk" data-orbit="0" data-phase="3.3">Личный кабинет</a>
+        <a class="e" href="#table" data-pick="op" data-orbit="1" data-phase="5.4">Онлайн-оплата</a>
+      </div>
+    </div>
+    <div class="hero__text">
+      <p class="brand" data-in>Ядро</p>
+      <p class="tag mono" data-in>студия разработки сайтов</p>
+      <h1 class="hero__title" data-in>Всё вращается вокруг <b>вашего бизнеса</b></h1>
+      <p class="hero__lead" data-in>Сначала находим ядро: что вы продаёте и&nbsp;кому. Потом собираем вокруг него сайт, оплату, доставку и&nbsp;заявки из&nbsp;соц-сетей.</p>
+      <div class="hero__acts" data-in>
+        <a class="btn btn--blue" href="#contact">Обсудить проект</a>
+        <span class="hero__hint mono">← нажмите на&nbsp;ядро</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Лабораторные работы -->
+  <section class="lab" id="lab">
+    <header class="head">
+      <p class="tag mono" data-in>Лабораторные работы</p>
+      <h2 class="head__t" data-in>Наши работы</h2>
+    </header>
+
+    <article class="exp" data-in>
+      <a class="exp__img" href="./concepts/orbita/"><img src="./media/orbita-full.jpg" alt="ORBITA" loading="lazy"></a>
+      <div class="exp__notes">
+        <p class="mono exp__n">Опыт № 01</p>
+        <h3>ORBITA</h3>
+        <dl>
+          <div><dt class="mono">Цель</dt><dd>Показать сложный финансовый продукт просто и&nbsp;так, чтобы его хотелось потрогать.</dd></div>
+          <div><dt class="mono">Метод</dt><dd>Сфера из&nbsp;частиц на&nbsp;WebGL, живой график прогноза, AI-чат, переключатель тарифов.</dd></div>
+          <div><dt class="mono">Результат</dt><dd>Лендинг, на&nbsp;котором каждый блок можно покрутить и&nbsp;нажать.</dd></div>
+        </dl>
+        <a class="link" href="./concepts/orbita/">Открыть →</a>
+      </div>
+    </article>
+
+    <article class="exp exp--flip" data-in>
+      <a class="exp__img" href="./work/lisinashop/"><img src="./media/lisinashop-full.jpg" alt="LisinaShop" loading="lazy"></a>
+      <div class="exp__notes">
+        <p class="mono exp__n">Опыт № 02</p>
+        <h3>LisinaShop</h3>
+        <dl>
+          <div><dt class="mono">Цель</dt><dd>Перенести магазин косметики на&nbsp;свой код и&nbsp;не&nbsp;потерять позиции в&nbsp;поиске.</dd></div>
+          <div><dt class="mono">Метод</dt><dd>Свой сервер заказов, ЮKassa с&nbsp;онлайн-чеком, доставка СДЭК, заявки в&nbsp;соц-сети.</dd></div>
+          <div><dt class="mono">Результат</dt><dd><b>130</b> товаров перенесено, <b>0</b> редиректов, <b>18</b> автотестов.</dd></div>
+        </dl>
+        <a class="link" href="./work/lisinashop/">Открыть →</a>
+      </div>
+    </article>
+
+    <article class="exp exp--small" data-in>
+      <a class="exp__img" href="./concepts/monolit/"><img src="./media/monolit-full.jpg" alt="MONOLIT" loading="lazy"></a>
+      <div class="exp__notes">
+        <p class="mono exp__n">Опыт № 03</p>
+        <h3>MONOLIT</h3>
+        <p class="exp__p">Архитектурное бюро. Здания генерируются кодом в&nbsp;3D, а&nbsp;при прокрутке день сменяется закатом и&nbsp;в&nbsp;окнах загорается свет.</p>
+        <a class="link" href="./concepts/monolit/">Открыть →</a>
+      </div>
+    </article>
+
+    <article class="exp exp--small exp--flip" data-in>
+      <a class="exp__img" href="./concepts/zerno/"><img src="./media/zerno-full.jpg" alt="ZERNO" loading="lazy"></a>
+      <div class="exp__notes">
+        <p class="mono exp__n">Опыт № 04</p>
+        <h3>ZERNO</h3>
+        <p class="exp__p">Обжарка кофе. Работающая корзина, квиз-подбор зерна, таймер заваривания и&nbsp;3D-пачка, которую можно крутить.</p>
+        <a class="link" href="./concepts/zerno/">Открыть →</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Цепная реакция -->
+  <section class="chain" id="chain">
+    <header class="head head--white">
+      <p class="tag mono" data-in>Процесс</p>
+      <h2 class="head__t" data-in>Цепная реакция</h2>
+      <p class="head__s" data-in>Каждый шаг запускает следующий. Простой сайт запускаем от&nbsp;2 дней.</p>
+    </header>
+    <ol class="chain__row" id="chainRow">
+      <li class="chain__step"><span class="chain__core" aria-hidden="true"></span><b>Знакомство</b><em class="mono">в день обращения</em><p>Созвон, задача, конкуренты, сроки и&nbsp;цена.</p></li>
+      <li class="chain__step"><span class="chain__core" aria-hidden="true"></span><b>Макет</b><em class="mono">от 1 дня</em><p>Прототип и&nbsp;дизайн, ссылка у&nbsp;вас в&nbsp;соц-сетях.</p></li>
+      <li class="chain__step"><span class="chain__core" aria-hidden="true"></span><b>Разработка</b><em class="mono">от 1 дня</em><p>Вёрстка, оплата, доставка. Деньги проверяем тестами.</p></li>
+      <li class="chain__step"><span class="chain__core" aria-hidden="true"></span><b>Запуск</b><em class="mono">пара часов</em><p>Ваш домен, аналитика и&nbsp;поддержка после.</p></li>
+    </ol>
+  </section>
+
+  <!-- Таблица элементов = конфигуратор -->
+  <section class="table" id="table">
+    <header class="head">
+      <p class="tag mono" data-in>Стоимость</p>
+      <h2 class="head__t" data-in>Соберите молекулу</h2>
+      <p class="head__s" data-in>Выберите основу и&nbsp;добавьте элементы. Справа появится примерная цена, точную назовём после созвона.</p>
+    </header>
+    <div class="table__body">
+      <div class="pt" id="pt">
+        <p class="pt__group mono pt__group--base">основа · один на&nbsp;выбор</p>
+        <p class="pt__group mono pt__group--add">добавки</p>
+        <button class="el el--base is-on" data-id="la" data-kind="base" data-price="25000" data-days="2" type="button" style="grid-area: la" aria-describedby="tip-la"><i class="mono">25 000 ₽</i><b>Лендинг</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-la" role="tooltip">Одна продающая страница: продукт, преимущества, отзывы и&nbsp;форма заявки.</span></button>
+        <button class="el el--base" data-id="ma" data-kind="base" data-price="45000" data-days="7" type="button" style="grid-area: ma" aria-describedby="tip-ma"><i class="mono">45 000 ₽</i><b>Магазин</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-ma" role="tooltip">Каталог с&nbsp;фильтрами, карточки товаров, корзина и&nbsp;оформление заказа.</span></button>
+        <button class="el el--base" data-id="lk" data-kind="base" data-price="60000" data-days="14" type="button" style="grid-area: lk" aria-describedby="tip-lk"><i class="mono">60 000 ₽</i><b>Кабинет</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-lk" role="tooltip">Регистрация и&nbsp;вход, личный кабинет, подписки и&nbsp;история заказов.</span></button>
+        <button class="el" data-id="op" data-kind="add" data-price="8000" type="button" style="grid-area: op" aria-describedby="tip-op"><i class="mono">+8 000 ₽</i><b>Оплата</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-op" role="tooltip">Приём оплаты картой и&nbsp;по&nbsp;СБП, онлайн-чек уходит покупателю автоматически.</span></button>
+        <button class="el" data-id="ds" data-kind="add" data-price="6000" type="button" style="grid-area: ds" aria-describedby="tip-ds"><i class="mono">+6 000 ₽</i><b>Доставка</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-ds" role="tooltip">Расчёт стоимости СДЭК и&nbsp;выбор пункта выдачи прямо при оформлении заказа.</span></button>
+        <button class="el" data-id="bt" data-kind="add" data-price="12000" type="button" style="grid-area: bt" aria-describedby="tip-bt"><i class="mono">+12 000 ₽</i><b>Бот</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-bt" role="tooltip">Бот в&nbsp;соц-сетях принимает заявки, сообщает статус заказа и&nbsp;делает рассылки.</span></button>
+        <button class="el" data-id="an" data-kind="add" data-price="5000" type="button" style="grid-area: an" aria-describedby="tip-an"><i class="mono">+5 000 ₽</i><b>Аналитика</b><span class="el__info" aria-hidden="true">i</span><span class="el__tip" id="tip-an" role="tooltip">Подключаем Метрику и&nbsp;цели: видно, откуда приходят клиенты и&nbsp;где уходят.</span></button>
+      </div>
+      <aside class="mol">
+        <svg class="mol__svg" id="molSvg" viewBox="-160 -130 320 260" aria-hidden="true"></svg>
+        <p class="mol__formula" id="formula">Лендинг</p>
+        <p class="mol__total"><span id="total">25 000</span> ₽</p>
+        <p class="mol__days mono">срок от <span id="days">2 дня</span></p>
+        <a class="btn btn--white" href="#contact">Обсудить эту молекулу</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Связь -->
+  <section class="contact" id="contact">
+    <div class="contact__head">
+      <h2 class="head__t" data-in>Запустим реакцию?</h2>
+      <p class="head__s" data-in>Расскажите, чем занимаетесь. Ответим в&nbsp;течение дня.</p>
+    </div>
+    <form class="form" id="form" novalidate data-in>
+      <label class="field"><span class="mono">Имя</span><input name="name" autocomplete="name" required></label>
+      <label class="field"><span class="mono">Соц-сети или телефон</span><input name="contact" required></label>
+      <label class="field field--wide"><span class="mono">Коротко о&nbsp;задаче</span><input name="task"></label>
+      <button class="launch" type="submit"><span class="launch__core" aria-hidden="true"></span><span>Запустить</span></button>
+      <p class="form__out mono" id="formOut" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="foot mono">
+  <span>© 2026 Ядро</span>
+  
+  <a href="#top">наверх ↑</a>
+</footer>
+
+</body>
+</html>

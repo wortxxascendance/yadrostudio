@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZERNO — обжарка кофе с характером</title>
+<meta name="description" content="ZERNO — обжарочная спешелти-кофе. Обжариваем по вторникам, доставляем к пятнице. Концепт студии recept.">
+<meta name="theme-color" content="#f1e8d8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e5402a'/%3E%3Cellipse cx='16' cy='16' rx='8' ry='11' fill='%232a1a12' transform='rotate(25 16 16)'/%3E%3Cpath d='M12 8c5 5-1 11 4 16' stroke='%23e5402a' stroke-width='1.8' fill='none' transform='rotate(25 16 16)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Golos+Text:wght@400;500;600;700&display=swap">
+  <script type="module" crossorigin src="../../assets/zerno-D3mC2yuR.js"></script>
+  <link rel="modulepreload" crossorigin href="../../assets/lenis-BLQ1Vt1D.js">
+  <link rel="modulepreload" crossorigin href="../../assets/core-CK0neKAN.js">
+  <link rel="stylesheet" crossorigin href="../../assets/zerno-CWrXV_Kk.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__logo" href="#top">ZERNO<sup>®</sup></a>
+  <nav class="nav__links">
+    <a href="#shop">Магазин</a>
+    <a href="#quiz">Подбор</a>
+    <a href="#brew">Заварить</a>
+    <a href="#sub">Подписка</a>
+  </nav>
+  <a class="nav__back" href="../../#dishes">recept ↗</a>
+  <button class="cart-btn" id="cartBtn" type="button" aria-label="Корзина" data-magnet="0.3">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+    <span class="cart-btn__n" id="cartCount">0</span>
+  </button>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="beans" id="beans" aria-hidden="true"></div>
+    <h1 class="hero__title">
+      <span class="hero__row" data-row><span>ЗЕРНО</span></span>
+      <span class="hero__row hero__row--2" data-row><span>С ХАРАКТЕРОМ</span></span>
+    </h1>
+    <div class="bag3d" id="bag3d" aria-hidden="true">
+      <div class="bag3d__in" id="bagIn">
+        <div class="bag3d__face bag3d__face--front" id="bagFront"></div>
+        <div class="bag3d__face bag3d__face--back" id="bagBack"></div>
+        <div class="bag3d__face bag3d__face--l"></div>
+        <div class="bag3d__face bag3d__face--r"></div>
+      </div>
+      <div class="bag3d__shadow"></div>
+    </div>
+    <div class="hero__foot">
+      <p class="hero__lead">Обжариваем каждый вторник маленькими партиями.<br>Доставляем к&nbsp;пятнице — пока кофе на&nbsp;пике вкуса.</p>
+      <div class="hero__stamp" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="st" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#st" textLength="286">СВЕЖАЯ ОБЖАРКА ✺ СПЕШЕЛТИ ✺ 84+ БАЛЛА ✺</textPath></text></svg><b>✺</b></div>
+      <a class="btn btn--red" href="#shop" data-magnet="0.3">В магазин <span>→</span></a>
+    </div>
+  </section>
+
+  <div class="velo" id="velo" aria-hidden="true">
+    <div class="velo__track"><span>ЭФИОПИЯ</span><i>✺</i><span>КОЛУМБИЯ</span><i>✺</i><span>КЕНИЯ</span><i>✺</i><span>БРАЗИЛИЯ</span><i>✺</i><span>ГВАТЕМАЛА</span><i>✺</i></div>
+    <div class="velo__track"><span>ЭФИОПИЯ</span><i>✺</i><span>КОЛУМБИЯ</span><i>✺</i><span>КЕНИЯ</span><i>✺</i><span>БРАЗИЛИЯ</span><i>✺</i><span>ГВАТЕМАЛА</span><i>✺</i></div>
+  </div>
+
+  <!-- МАГАЗИН -->
+  <section class="shop" id="shop">
+    <div class="shop__head">
+      <h2 class="h2" data-split>Свежая<br>обжарка</h2>
+      <div class="chips" role="tablist" aria-label="Фильтр">
+        <button class="chip is-on" data-filter="all" role="tab" aria-selected="true">Все</button>
+        <button class="chip" data-filter="filter" role="tab" aria-selected="false">Под фильтр</button>
+        <button class="chip" data-filter="espresso" role="tab" aria-selected="false">Эспрессо</button>
+        <button class="chip" data-filter="decaf" role="tab" aria-selected="false">Без кофеина</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- КВИЗ -->
+  <section class="quiz" id="quiz">
+    <div class="quiz__card">
+      <div class="quiz__side">
+        <p class="label">Подбор за 30 секунд</p>
+        <h2 class="h2 h2--light" data-split>Не знаете,<br>что выбрать?</h2>
+        <div class="quiz__dots" id="quizDots"><i></i><i></i><i></i></div>
+      </div>
+      <div class="quiz__body" id="quizBody" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ЗАВАРИТЬ -->
+  <section class="brew" id="brew">
+    <div class="brew__info">
+      <p class="label">Рецепт для воронки V60</p>
+      <h2 class="h2" data-split>Заварим<br>вместе?</h2>
+      <ul class="brew__params"><li><b>15 г</b><span>кофе</span></li><li><b>250 мл</b><span>вода 93°</span></li><li><b>3:00</b><span>время</span></li></ul>
+      <ol class="brew__steps" id="brewSteps">
+        <li data-from="0" data-to="45"><b>0:00</b>Цветение — залейте 40 мл и подождите</li>
+        <li data-from="45" data-to="90"><b>0:45</b>Первый пролив до 150 мл, по спирали</li>
+        <li data-from="90" data-to="135"><b>1:30</b>Второй пролив до 250 мл</li>
+        <li data-from="135" data-to="180"><b>2:15</b>Дайте стечь и покрутите воронку</li>
+      </ol>
+    </div>
+    <div class="brew__timer">
+      <svg viewBox="0 0 300 300" class="timer">
+        <defs><clipPath id="cup"><path d="M80 110 h140 l-14 120 a20 20 0 0 1 -20 18 h-72 a20 20 0 0 1 -20 -18 z"/></clipPath></defs>
+        <circle cx="150" cy="150" r="138" class="timer__track"/>
+        <circle cx="150" cy="150" r="138" class="timer__arc" id="timerArc"/>
+        <path d="M80 110 h140 l-14 120 a20 20 0 0 1 -20 18 h-72 a20 20 0 0 1 -20 -18 z" class="timer__cup"/>
+        <g clip-path="url(#cup)"><rect x="60" y="248" width="180" height="140" class="timer__coffee" id="timerCoffee"/></g>
+        <path d="M220 140 a24 24 0 0 1 0 48" class="timer__cup" fill="none"/>
+        <g class="timer__steam" id="steam"><path d="M125 95c-6-10 6-14 0-26"/><path d="M150 92c-6-10 6-14 0-26"/><path d="M175 95c-6-10 6-14 0-26"/></g>
+      </svg>
+      <p class="timer__time" id="timerTime">0:00</p>
+      <p class="timer__note">В демо время идёт в&nbsp;6 раз быстрее</p>
+      <div class="timer__btns">
+        <button class="btn btn--dark" id="timerBtn" type="button">Старт</button>
+        <button class="btn btn--line" id="timerReset" type="button">Сброс</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДПИСКА -->
+  <section class="sub" id="sub">
+    <p class="label">Кофе по подписке</p>
+    <h2 class="sub__title" data-split>Чтобы кофе<br>не&nbsp;заканчивался</h2>
+    <div class="sub__calc">
+      <label class="sub__range"><span>Чашек в день: <b id="cups">2</b></span><input type="range" min="1" max="6" value="2" id="cupsRange"></label>
+      <div class="sub__out">
+        <div><small>В месяц</small><b id="subGrams">900 г</b></div>
+        <div><small>Пачек по 250 г</small><b id="subPacks">4</b></div>
+        <div><small>Цена с подпиской −15%</small><b id="subPrice">3 366 ₽</b></div>
+      </div>
+      <button class="btn btn--red" id="subBtn" type="button">Оформить подписку</button>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__word" aria-hidden="true">ZERNO</p>
+  <div class="foot__row"><span>Обжарочная · Москва</span><span>Концепт студии <a href="../../">recept</a> · бренд вымышленный</span><span>© 2026</span></div>
+</footer>
+
+<!-- Корзина -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__bg" data-close></div>
+  <aside class="drawer__panel" role="dialog" aria-label="Корзина">
+    <div class="drawer__head"><h3>Корзина</h3><button class="drawer__x" data-close aria-label="Закрыть">✕</button></div>
+    <div class="ship"><p id="shipText">До бесплатной доставки 3 000 ₽</p><div class="ship__bar"><i id="shipBar"></i></div></div>
+    <ul class="drawer__list" id="cartList"></ul>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Итого</span><b id="cartTotal">0 ₽</b></div>
+      <button class="btn btn--red btn--wide" id="checkout" type="button">Оформить заказ</button>
+    </div>
+  </aside>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+</body>
+</html>

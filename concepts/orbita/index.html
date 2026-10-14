@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORBITA — деньги, которые думают сами</title>
+<meta name="description" content="ORBITA — AI-ассистент для личных финансов: прогноз баланса, контроль подписок и автокопилка. Концепт студии recept.">
+<meta name="theme-color" content="#05060a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23c6ff3d'/%3E%3Cellipse cx='16' cy='16' rx='13' ry='4' fill='none' stroke='%237c5cff' stroke-width='1.6' transform='rotate(-25 16 16)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <script type="module" crossorigin src="../../assets/orbita-C1cIHMAv.js"></script>
+  <link rel="modulepreload" crossorigin href="../../assets/lenis-BLQ1Vt1D.js">
+  <link rel="modulepreload" crossorigin href="../../assets/core-CK0neKAN.js">
+  <link rel="modulepreload" crossorigin href="../../assets/three.module-BOSo2ldx.js">
+  <link rel="stylesheet" crossorigin href="../../assets/orbita-ClkTXOTq.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><ellipse cx="16" cy="16" rx="14" ry="4.5" fill="none" stroke="var(--violet)" stroke-width="1.6" transform="rotate(-25 16 16)"/></svg>ORBITA</a>
+  <nav class="top__nav">
+    <a href="#features">Возможности</a>
+    <a href="#how">Как работает</a>
+    <a href="#pricing">Тарифы</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <div class="top__right">
+    <a class="top__back" href="../../#dishes">← recept</a>
+    <a class="btn btn--lime btn--sm" href="#start" data-magnet="0.2">Начать</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas class="hero__orb" id="orb" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <p class="pill" data-hi><span class="pill__dot"></span>Новое: AI-прогноз на 90 дней вперёд</p>
+      <h1 class="hero__title" data-hi-split>Деньги,<br>которые <span class="grad">думают сами</span></h1>
+      <p class="hero__lead" data-hi>ORBITA ведёт бюджет, находит лишние подписки и&nbsp;откладывает на&nbsp;цели — пока вы живёте свою жизнь.</p>
+      <div class="hero__cta" data-hi>
+        <a class="btn btn--lime" href="#start" data-magnet="0.25">Попробовать бесплатно</a>
+        <a class="btn btn--ghost" href="#features">Смотреть, как работает</a>
+      </div>
+    </div>
+    <div class="float float--1" data-float><span class="float__ico">↓</span><div><b>−1 290 ₽ / мес</b><small>Отменена забытая подписка</small></div></div>
+    <div class="float float--2" data-float><span class="float__ico float__ico--v">✦</span><div><b>Отпуск через 4 мес.</b><small>Копилка опережает план на 12%</small></div></div>
+    <div class="float float--3" data-float><span class="float__ico">₽</span><div><b>+18 400 ₽</b><small>Сэкономлено в октябре</small></div></div>
+  </section>
+
+  <section class="strip">
+    <div class="marquee" style="--marquee-speed:40s">
+      <div class="marquee__track">
+        <span><b>2,4 млн</b> операций разобрано за&nbsp;сутки</span><i>◆</i><span><b>4,9</b> средняя оценка в&nbsp;сторах</span><i>◆</i><span><b>11 200 ₽</b> в&nbsp;среднем экономят за&nbsp;первый месяц</span><i>◆</i><span><b>0</b> доступа к&nbsp;вашим деньгам — только чтение</span><i>◆</i>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span><b>2,4 млн</b> операций разобрано за&nbsp;сутки</span><i>◆</i><span><b>4,9</b> средняя оценка в&nbsp;сторах</span><i>◆</i><span><b>11 200 ₽</b> в&nbsp;среднем экономят за&nbsp;первый месяц</span><i>◆</i><span><b>0</b> доступа к&nbsp;вашим деньгам — только чтение</span><i>◆</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO -->
+  <section class="features" id="features">
+    <div class="head">
+      <p class="eyebrow">// возможности</p>
+      <h2 class="h2" data-split>Финансовый директор<br><span class="muted">в&nbsp;вашем кармане</span></h2>
+    </div>
+
+    <div class="bento">
+      <article class="tile tile--chart" data-tilt>
+        <div class="tile__head"><p class="tile__kicker">Прогноз баланса</p><p class="tile__big"><span id="balNow">184 320</span> ₽</p><p class="tile__sub">Через 90 дней: <b class="lime" id="balFuture">263 900 ₽</b></p></div>
+        <div class="chart-wrap"><canvas class="chart" id="chart" aria-label="График прогноза баланса"></canvas></div>
+        <div class="chart__tip" id="chartTip" hidden><b></b><small></small></div>
+      </article>
+
+      <article class="tile tile--chat">
+        <p class="tile__kicker">AI-ассистент</p>
+        <div class="chat" id="chat" aria-live="polite"></div>
+      </article>
+
+      <article class="tile tile--subs">
+        <p class="tile__kicker">Подписки</p>
+        <p class="tile__sub">Сэкономлено: <b class="lime"><span id="saved">0</span> ₽/мес</b></p>
+        <ul class="subs" id="subs">
+          <li><span class="subs__logo" style="--c:#e50914">N</span><div><b>Онлайн-кинотеатр</b><small>не открывали 47 дней</small></div><span class="subs__price">599 ₽</span><button class="switch" role="switch" aria-checked="true" data-price="599" aria-label="Онлайн-кинотеатр"></button></li>
+          <li><span class="subs__logo" style="--c:#1db954">♪</span><div><b>Музыка</b><small>каждый день</small></div><span class="subs__price">299 ₽</span><button class="switch" role="switch" aria-checked="true" data-price="299" aria-label="Музыка"></button></li>
+          <li><span class="subs__logo" style="--c:#ff7a00">◎</span><div><b>Фитнес-приложение</b><small>не открывали 3 мес.</small></div><span class="subs__price">690 ₽</span><button class="switch" role="switch" aria-checked="true" data-price="690" aria-label="Фитнес-приложение"></button></li>
+          <li><span class="subs__logo" style="--c:#5865f2">☁</span><div><b>Облако 2 ТБ</b><small>занято 14%</small></div><span class="subs__price">399 ₽</span><button class="switch" role="switch" aria-checked="true" data-price="399" aria-label="Облако 2 ТБ"></button></li>
+        </ul>
+      </article>
+
+      <article class="tile tile--goal">
+        <p class="tile__kicker">Цель</p>
+        <div class="goal">
+          <svg viewBox="0 0 120 120" class="goal__ring"><circle cx="60" cy="60" r="50"/><circle cx="60" cy="60" r="50" id="goalArc"/></svg>
+          <div class="goal__c"><b><span id="goalPct">0</span>%</b><small>Япония&nbsp;✈</small></div>
+        </div>
+        <p class="tile__sub">Осталось 84 000 ₽ · ORBITA откладывает по&nbsp;<b>7 000 ₽</b> с&nbsp;каждой зарплаты</p>
+      </article>
+
+      <article class="tile tile--card">
+        <p class="tile__kicker">Виртуальная карта</p>
+        <div class="vcard" id="vcard">
+          <div class="vcard__shine"></div>
+          <div class="vcard__top"><span>ORBITA</span><svg viewBox="0 0 40 26"><circle cx="14" cy="13" r="12" fill="#c6ff3d" opacity=".9"/><circle cx="26" cy="13" r="12" fill="#7c5cff" opacity=".9"/></svg></div>
+          <div class="vcard__chip"></div>
+          <p class="vcard__num">••••  ••••  ••••  4207</p>
+          <div class="vcard__bot"><span>АЛЕКСАНДРА К.</span><span>09/29</span></div>
+        </div>
+        <p class="tile__sub">Одноразовые номера для покупок в&nbsp;интернете</p>
+      </article>
+
+      <article class="tile tile--cats">
+        <p class="tile__kicker">Куда уходят деньги</p>
+        <ul class="cats" id="cats">
+          <li style="--v:.82;--c:#c6ff3d"><span>Продукты</span><i></i><b>32 410 ₽</b></li>
+          <li style="--v:.56;--c:#7c5cff"><span>Кафе</span><i></i><b>18 900 ₽</b></li>
+          <li style="--v:.38;--c:#3dd6ff"><span>Такси</span><i></i><b>12 300 ₽</b></li>
+          <li style="--v:.22;--c:#ff6bcb"><span>Подписки</span><i></i><b>4 820 ₽</b></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- КАК РАБОТАЕТ -->
+  <section class="how" id="how">
+    <div class="how__phone-wrap">
+      <div class="phone">
+        <div class="phone__notch"></div>
+        <div class="phone__screen" data-screen="0">
+          <p class="ps__t">Подключите банк</p>
+          <div class="ps__banks"><i style="--c:#c6ff3d">A</i><i style="--c:#7c5cff">B</i><i style="--c:#3dd6ff">C</i><i style="--c:#ff6bcb">D</i><i style="--c:#ffd23d">E</i><i style="--c:#ff7a00">F</i></div>
+          <div class="ps__btn">Только чтение · безопасно</div>
+        </div>
+        <div class="phone__screen" data-screen="1">
+          <p class="ps__t">Учусь на ваших тратах…</p>
+          <div class="ps__scan"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="ps__mono">1 284 операции · 6 месяцев</p>
+        </div>
+        <div class="phone__screen" data-screen="2">
+          <p class="ps__t">Ваш план готов</p>
+          <div class="ps__plan"><div><small>Экономия</small><b class="lime">+11 200 ₽</b></div><div><small>Копилка</small><b>7 000 ₽</b></div><div><small>Подушка</small><b>3,2 мес.</b></div></div>
+          <div class="ps__btn ps__btn--lime">Включить автопилот</div>
+        </div>
+      </div>
+    </div>
+    <div class="how__steps">
+      <p class="eyebrow">// как это работает</p>
+      <div class="step" data-step="0"><span class="step__n">01</span><h3>Подключите банки</h3><p>Карты и&nbsp;счета подтягиваются за&nbsp;минуту. ORBITA получает только право чтения&nbsp;— перевести деньги она не&nbsp;может.</p></div>
+      <div class="step" data-step="1"><span class="step__n">02</span><h3>ORBITA учится</h3><p>Разбирает полгода операций, находит регулярные платежи, забытые подписки и&nbsp;сезонные траты.</p></div>
+      <div class="step" data-step="2"><span class="step__n">03</span><h3>Деньги на&nbsp;автопилоте</h3><p>Каждую зарплату ORBITA сама раскладывает по&nbsp;целям и&nbsp;предупреждает, если месяц идёт не&nbsp;по&nbsp;плану.</p></div>
+    </div>
+  </section>
+
+  <!-- ТАРИФЫ -->
+  <section class="pricing" id="pricing">
+    <div class="head head--center">
+      <p class="eyebrow">// тарифы</p>
+      <h2 class="h2" data-split>Окупается<br><span class="muted">в&nbsp;первый месяц</span></h2>
+      <div class="toggle" role="radiogroup" aria-label="Период оплаты">
+        <button role="radio" aria-checked="true" data-period="m">Месяц</button>
+        <button role="radio" aria-checked="false" data-period="y">Год <em>−33%</em></button>
+        <i class="toggle__thumb"></i>
+      </div>
+    </div>
+    <div class="plans">
+      <article class="plan" data-glow>
+        <p class="plan__name">Старт</p>
+        <p class="plan__price"><span data-m="0" data-y="0">0</span> ₽</p>
+        <p class="plan__per">навсегда</p>
+        <ul><li>1 банк</li><li>Категории трат</li><li>Напоминания о&nbsp;подписках</li></ul>
+        <a class="btn btn--ghost" href="#start">Начать</a>
+      </article>
+      <article class="plan plan--hot" data-glow>
+        <p class="plan__badge">Выбор 78% пользователей</p>
+        <p class="plan__name">Плюс</p>
+        <p class="plan__price"><span data-m="299" data-y="199">299</span> ₽</p>
+        <p class="plan__per">в месяц</p>
+        <ul><li>Все банки</li><li>AI-ассистент без лимитов</li><li>Прогноз на&nbsp;90 дней</li><li>Автокопилка на&nbsp;цели</li></ul>
+        <a class="btn btn--lime" href="#start">Попробовать 14 дней</a>
+      </article>
+      <article class="plan" data-glow>
+        <p class="plan__name">Семья</p>
+        <p class="plan__price"><span data-m="499" data-y="333">499</span> ₽</p>
+        <p class="plan__per">в месяц · до 5 человек</p>
+        <ul><li>Всё из «Плюс»</li><li>Общие цели и&nbsp;бюджеты</li><li>Детские карты с&nbsp;лимитами</li></ul>
+        <a class="btn btn--ghost" href="#start">Выбрать</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="head"><p class="eyebrow">// вопросы</p><h2 class="h2" data-split>Спрашивают<br><span class="muted">чаще всего</span></h2></div>
+    <div class="faq__list">
+      <details><summary>Это безопасно?<i></i></summary><p>ORBITA получает доступ только на&nbsp;чтение операций. Перевести, снять или потратить деньги невозможно технически. Данные шифруются и&nbsp;хранятся в&nbsp;России.</p></details>
+      <details><summary>Какие банки поддерживаются?<i></i></summary><p>Все крупные российские банки и&nbsp;большинство региональных. Если вашего нет&nbsp;— можно загрузить выписку файлом.</p></details>
+      <details><summary>Как ORBITA отменяет подписки?<i></i></summary><p>Мы показываем, какие подписки вы не&nbsp;используете, и&nbsp;даём прямую ссылку на&nbsp;отмену. Решение всегда за&nbsp;вами.</p></details>
+      <details><summary>Что будет после пробного периода?<i></i></summary><p>Предупредим за&nbsp;3 дня. Если не&nbsp;продлите&nbsp;— останетесь на&nbsp;бесплатном тарифе, ничего не&nbsp;потеряете.</p></details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="start">
+    <div class="cta__orb" aria-hidden="true"></div>
+    <h2 class="cta__title" data-split>Пусть деньги<br><span class="grad">работают</span></h2>
+    <form class="cta__form" id="ctaForm" novalidate>
+      <input type="email" name="email" placeholder="Ваша почта" aria-label="Почта" required autocomplete="email">
+      <button class="btn btn--lime" type="submit">Получить доступ</button>
+    </form>
+    <p class="cta__ok" id="ctaOk" role="status" hidden>Готово! Письмо с&nbsp;приглашением уже летит к&nbsp;вам.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© 2026 ORBITA</span>
+  <span>Концепт студии <a href="../../">recept</a> · бренд вымышленный</span>
+</footer>
+
+</body>
+</html>
