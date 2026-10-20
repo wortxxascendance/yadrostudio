@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://yadrostudio.ru
+Sitemap: https://yadrostudio.ru/sitemap.xml
